@@ -22,4 +22,7 @@ If 2.* use pip2.exe
 Generally, install Python deps in Git Bash via "pip2.exe install pygame" or "pip3.exe install pygame"
 
 
+#Note: test connecting to local branch
+
+
 
