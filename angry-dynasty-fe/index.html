@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dynasty vs Emblem - Sling Siege</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="hud">
+      <div class="left">
+        <div class="brand">Dynasty vs Emblem</div>
+        <div class="stats">
+          <span id="levelName">Level 1</span>
+          <span> | </span>
+          <span>Warriors: <strong id="warriorsCount">0</strong></span>
+          <span> | </span>
+          <span>Enemies: <strong id="enemiesCount">0</strong></span>
+        </div>
+      </div>
+      <div class="right">
+        <button id="resetBtn" class="btn">Reset</button>
+        <button id="nextBtn" class="btn">Next ▶</button>
+      </div>
+    </div>
+
+    <div id="game-container"></div>
+
+    <div id="overlay" class="overlay hidden">
+      <div class="modal">
+        <div id="overlayTitle" class="modal-title">Level Complete</div>
+        <div id="overlaySubtitle" class="modal-subtitle">Click Next to continue</div>
+        <div class="modal-actions">
+          <button id="overlayReset" class="btn">Retry</button>
+          <button id="overlayNext" class="btn primary">Next ▶</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/matter-js@0.19.0/build/matter.min.js"></script>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
